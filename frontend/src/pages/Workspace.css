@@ -1,0 +1,136 @@
+.workspace-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+
+.workspace-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.workspace-grid {
+  display: flex;
+  gap: 24px;
+  height: calc(100vh - 180px);
+}
+
+.case-details-pane {
+  flex: 0 0 350px;
+  overflow-y: auto;
+}
+
+.action-pane {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.detail-section {
+  margin-top: 24px;
+}
+
+.detail-section h4 {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--surface-border);
+  padding-bottom: 4px;
+}
+
+.entity-list {
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.entity-list li {
+  background: rgba(0,0,0,0.2);
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.tx-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.tx-table th, .tx-table td {
+  padding: 8px 4px;
+  text-align: left;
+  border-bottom: 1px solid var(--surface-border);
+}
+
+.tx-table .amount {
+  font-family: monospace;
+  text-align: right;
+  color: var(--warning);
+}
+
+.narrative-editor {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.editor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.editor-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.document-editor {
+  flex: 1;
+  width: 100%;
+  background: rgba(15, 23, 42, 0.4);
+  border: 1px solid var(--surface-border);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  padding: 24px;
+  resize: none;
+  transition: border-color 0.2s;
+}
+
+.document-editor:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.empty-editor {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--text-secondary);
+  border: 2px dashed var(--surface-border);
+  border-radius: 8px;
+}
+
+.empty-editor .icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.empty-editor .sub {
+  font-size: 0.9rem;
+  max-width: 300px;
+  margin-top: 8px;
+}
